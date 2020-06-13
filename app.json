@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "indsus",
+    "name": "IndSus",
     "slug": "indsus",
     "platforms": [
       "ios",
@@ -12,8 +12,8 @@
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "cover",
+      "backgroundColor": "#288BFF"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
