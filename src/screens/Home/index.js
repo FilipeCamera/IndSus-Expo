@@ -1,7 +1,6 @@
 import React from "react";
 import { View, Text, Image, ScrollView } from "react-native";
 import { Button } from "react-native-elements";
-import ModalDropdown from 'react-native-modal-dropdown';
 import { Feather } from "@expo/vector-icons";
 import styles from "./styles";
 

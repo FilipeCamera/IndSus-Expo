@@ -11,21 +11,21 @@ const styles = StyleSheet.create({
     boxImage: {
         position: 'absolute',
         top: 40,
-        width: 150,
-        height: 150,
-        borderRadius: 75,
+        width: 80,
+        height: 80,
+        borderRadius: 40,
         backgroundColor: '#FFD07480',
         alignItems: 'center',
         justifyContent: 'center',
     },
     logo: {
-        width: 110,
-        height: 110,
+        width: 60,
+        height: 60,
     },
     boxWhite: {
         position: 'absolute',
         bottom: 0,
-        height: height/2 + 50,
+        height: height/2 + 120,
         width: '100%',
         borderTopLeftRadius: 50,
         borderTopRightRadius: 50,
@@ -79,7 +79,8 @@ const styles = StyleSheet.create({
     form: {
         marginTop: 30,
         width: '100%',
-        padding: 10
+        padding: 10,
+        alignItems: 'center'
     }
 })
 

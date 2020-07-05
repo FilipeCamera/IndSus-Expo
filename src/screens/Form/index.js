@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Image, Text } from "react-native";
+import DataPicker from "react-native-datepicker";
 import { Input, Button } from "react-native-elements";
 import styles from "./styles";
 
@@ -45,6 +46,20 @@ export default function Formulario({ navigation }) {
               inputStyle={{ fontSize: 16, color: "#5B5B5B" }}
               placeholder="Localização"
             />
+            <DataPicker
+              mode="date"
+              format="DD-MM-YYYY"
+              customStyles={{
+                dateInput: {
+                  borderRadius: 4,
+                  borderColor: '#C8C8C8',
+                },
+                dateText: {
+                  color: '#5B5B5B'
+                }
+              }}
+              style={{margin: 10}}
+            />
           </View>
         </View>
         <Button
@@ -57,7 +72,7 @@ export default function Formulario({ navigation }) {
           }}
           titleStyle={{ fontFamily: "Quantico-Bold", fontSize: 16 }}
           raised={true}
-          onPress={() => navigation.navigate('Areas')}
+          onPress={() => navigation.navigate("Areas")}
         />
       </View>
     </View>
