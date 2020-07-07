@@ -1,5 +1,7 @@
 
-import {StyleSheet} from 'react-native'
+import {StyleSheet, Dimensions} from 'react-native'
+
+const {width, height} = Dimensions.get('screen')
 
 const styles = StyleSheet.create({
     container: {
@@ -9,26 +11,26 @@ const styles = StyleSheet.create({
     boxImage: {
         position: 'absolute',
         top: 50,
-        width: 200,
-        height: 200,
-        borderRadius: 100,
+        width: height > 760 ? 280 : 180,
+        height: height > 760 ? 280 : 180,
+        borderRadius: height > 760 ? 140 : 90,
         backgroundColor: '#FFD07480',
         alignItems: 'center',
         justifyContent: 'center',
     },
     logo: {
-        width: 140,
-        height: 140,
+        width: height > 760 ? 200 : 130,
+        height: height > 760 ? 200 : 130,
     },
     boxImageLinear: {
         elevation: -1,
         position: 'relative',
-        top: 140,
+        top: height > 760 ? 210 : 150,
     },
     boxWhite: {
         position: 'absolute',
         bottom: 0,
-        height: 300,
+        height: height > 760 ? 300 : 260,
         width: '100%',
         borderTopLeftRadius: 50,
         borderTopRightRadius: 50,
@@ -68,6 +70,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
+        marginTop: 20,
     }
 })
 

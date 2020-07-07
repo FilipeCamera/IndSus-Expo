@@ -3,6 +3,11 @@ module.exports = {
     {
       title: "Topografia",
       nota: 0,
+      checked1: false,
+      checked2: false,
+      checked3: false,
+      checked4: false,
+      checked5: false,
     },
     {
       title: "Posição do Relevo",

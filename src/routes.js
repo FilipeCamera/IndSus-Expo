@@ -11,6 +11,7 @@ import Grafico from './screens/Grafico'
 import AreaDois from './screens/AreaDois'
 import AreaTres from './screens/AreaTres'
 import AreaQuat from './screens/AreaQuatro'
+import DadosResult from './screens/DadosResult'
 
 const Stack = createStackNavigator()
 
@@ -26,6 +27,7 @@ export default function Routes(){
                 <Stack.Screen name='AreaTres' component={AreaTres} options={{headerShown: false}}/>
                 <Stack.Screen name='AreaQuatro' component={AreaQuat} options={{headerShown: false}}/>
                 <Stack.Screen name='Dados' component={Dados} options={{headerShown: false}}/>
+                <Stack.Screen name='DadosResult' component={DadosResult} options={{headerShown: false}}/>
                 <Stack.Screen name='Grafico' component={Grafico} options={{headerShown: false}}/>
             </Stack.Navigator>
         </NavigationContainer>

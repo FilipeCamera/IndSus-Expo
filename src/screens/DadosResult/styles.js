@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         width: 120,
         height: 50,
         borderRadius: 25,
-        backgroundColor: '#FFF'
+        backgroundColor: '#FFF',
     },
     textBlue: {
         fontFamily: 'Quantico-Bold',
@@ -61,28 +61,11 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderBottomColor: '#C8C8C8'
     },
-    boxDados: {
-        marginTop: height > 760 ? 40 : 10,
-        marginBottom: 10,
-        width: 300,
-        height: height > 760 ? height - 370 : 400,
-        alignItems: 'center',
-        backgroundColor: '#C9C9C9',
-        borderRadius: 8,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.5,
-        shadowRadius: 8,
-        elevation: 1,
-    },
     headerDados: {
         width: 250,
         padding: 10,
         borderRadius: 8,
-        margin: 15,
+        margin: 10,
         backgroundColor: '#5B5B5B',
         alignItems: "center",
         justifyContent: 'center'
@@ -99,12 +82,11 @@ const styles = StyleSheet.create({
     bodyText: {
         fontFamily: 'Quantico-Regular',
         fontSize: 15,
-        color: '#5B5B5B',
-        margin: 10,
+        color: '#5B5B5B'
     },
     button: {
         position: 'absolute',
-        bottom: height > 760 ? -60 : -30,
+        bottom: -20,
         right: 20,
         flexDirection: 'row',
         alignItems: 'center',
@@ -115,6 +97,48 @@ const styles = StyleSheet.create({
         fontFamily: 'Quantico-Regular',
         color: '#288BFF',
         fontSize: 15,
+    },
+    boxResultado: {
+        marginTop: 20,
+        marginBottom: 20,
+        width: width - 10,
+        alignItems: 'center',
+    },
+    resultText: {
+        marginTop: 10,
+        fontFamily: 'Quantico-Bold',
+        fontSize: 16,
+        color: '#5B5B5B'
+    },
+    boxDadosResult: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        width: '90%',
+        padding: 20,
+    },
+    textDadosResult: {
+        fontFamily: 'Quantico-Regular',
+        fontSize: 14,
+        color: '#5B5B5B',
+        textAlign: 'left',
+        width: 100
+    },
+    boxNota: {
+        width: 30,
+        height: 30,
+        borderRadius: 15,
+        borderWidth: 1,
+        borderColor: '#5B5B5B',
+        backgroundColor: '#FFF',
+        alignItems: 'center',
+        justifyContent: 'center',
+        elevation: 1,
+    },
+    textNota: {
+        fontFamily: 'Quantico-Regular',
+        fontSize: 14,
+        color: '#4B4B4B',
     }
 })
 

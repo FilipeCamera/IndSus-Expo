@@ -73,6 +73,7 @@ export default function AreaUm({navigation}) {
                 width: 250,
                 height: 50,
               }}
+              raised
             />
           </ScrollView>
         </View>

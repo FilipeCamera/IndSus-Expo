@@ -11,16 +11,16 @@ const styles = StyleSheet.create({
     boxImage: {
         position: 'absolute',
         top: 40,
-        width: 80,
-        height: 80,
-        borderRadius: 40,
+        width: height > 760 ? 140 : 80,
+        height: height > 760 ? 140 : 80,
+        borderRadius: height > 760 ? 70 : 40,
         backgroundColor: '#FFD07480',
         alignItems: 'center',
         justifyContent: 'center',
     },
     logo: {
-        width: 60,
-        height: 60,
+        width: height > 760 ? 90 : 60,
+        height: height > 760 ? 90 : 60,
     },
     boxWhite: {
         position: 'absolute',
